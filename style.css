@@ -51,6 +51,7 @@ main {
 .current-temperature {
     color: #2d2936;
     font-size: 48px;
+    display: flex;
 }
 
 .current-weather {
@@ -59,7 +60,7 @@ main {
 }
 
 .current-city {
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 900;
     margin: 0;
     color: #2d2936;
@@ -70,6 +71,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
 }
 
 .current-details strong {
@@ -77,21 +79,18 @@ main {
 }
 
 .current-temperature-icon {
-    position: relative;
-    top: -8px;
-    font-size: 40px;
-    margin-right: 10px;
+    width: 88px;
+    height: 88px;
 }
 
 .current-temperature-value {
     font-size: 80px;
+    margin-left: 10px;
     font-weight: bold;
 }
 
 .current-temperature-unit {
     font-size: 28px;
-    position: relative;
-    top: -38px;
     font-weight: bold;
 }
 
