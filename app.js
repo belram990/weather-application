@@ -57,3 +57,29 @@ function formatDate(date) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+function displayForcast() {
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  let forcastHtml = "";
+
+  days.forEach(function (day) {
+    forcastHtml =
+      forcastHtml +
+      `
+ <div class="weather-forcast-day">
+    <div class="weather-forcast-date">${day}</div>
+    <div class="weather-forcast-icon">🌤️</div>
+    <div class="weather-forcast-temperatures">
+    <div class="weather-forcast-temperature">
+    <strong>15°</strong>
+    </div>
+    <div class="weather-forcast-temperature">9°</div>
+    </div>
+   </div>
+   `;
+  });
+
+  let forcastElement = document.querySelector("#forcast");
+  forcastElement.innerHTML = forcastHtml;
+}
+displayForcast();
