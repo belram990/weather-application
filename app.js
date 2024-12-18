@@ -63,23 +63,23 @@ function displayForcast() {
   let forcastHtml = "";
 
   days.forEach(function (day) {
-    forcastHtml =
-      forcastHtml +
+    forecastHtml =
+      forecastHtml +
       `
- <div class="weather-forcast-day">
-    <div class="weather-forcast-date">${day}</div>
-    <div class="weather-forcast-icon">🌤️</div>
-    <div class="weather-forcast-temperatures">
-    <div class="weather-forcast-temperature">
+ <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">🌤️</div>
+    <div class="weather-forecast-temperatures">
+    <div class="weather-forecast-temperature">
     <strong>15°</strong>
     </div>
-    <div class="weather-forcast-temperature">9°</div>
+    <div class="weather-forecast-temperature">9°</div>
     </div>
    </div>
    `;
   });
 
-  let forcastElement = document.querySelector("#forcast");
-  forcastElement.innerHTML = forcastHtml;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
 }
-displayForcast();
+displayForecast();
