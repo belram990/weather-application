@@ -58,9 +58,9 @@ function formatDate(date) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-function displayForcast() {
+function displayForecast() {
   let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
-  let forcastHtml = "";
+  let forecastHtml = "";
 
   days.forEach(function (day) {
     forecastHtml =
